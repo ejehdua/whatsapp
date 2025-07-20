@@ -69,13 +69,11 @@ body {
 }
 
 /* Specific sender alignment */
-.message-container.anonymous1,
-.message-container.anonymous3 {
+.message-container.other {
     align-self: flex-start; /* Left aligned */
 }
 
-.message-container.anonymous2,
-.message-container.anonymous4 {
+.message-container.me {
     align-self: flex-end; /* Right aligned */
 }
 
@@ -93,23 +91,19 @@ body {
     font-size: 0.75rem;
     color: #666;
     margin-bottom: 2px;
-    text-align: right;
     width: 100%; /* Ensure it takes full width of container */
 }
 
-.message-container.anonymous1 .sender-name,
-.message-container.anonymous3 .sender-name {
+.message-container.other .sender-name {
     text-align: right;
 }
 
-.message-container.anonymous2 .sender-name,
-.message-container.anonymous4 .sender-name {
+.message-container.me .sender-name {
     text-align: left;
 }
 
 /* Specific bubble colors */
-.message.anonymous1,
-.message.anonymous3 {
+.message.other {
     background-color: #ffffff; /* White for left-aligned messages */
     color: #333;
     border-top-right-radius: 8px;
@@ -118,8 +112,7 @@ body {
     border-bottom-right-radius: 0;
 }
 
-.message.anonymous2,
-.message.anonymous4 {
+.message.me {
     background-color: #dcf8c6; /* Light green for right-aligned messages */
     color: #333;
     border-top-right-radius: 8px;
